@@ -3,6 +3,9 @@ require("dotenv").config()
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+
+breaking change
+
 console.log(process.env)
 module.exports = {
   siteMetadata: {
