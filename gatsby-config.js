@@ -6,6 +6,7 @@ require("dotenv").config({
 
 //breaking change
 
+delete process.env.CI
 const { isCI } = require("gatsby-core-utils")
 
 console.log("IS CI", isCI())
