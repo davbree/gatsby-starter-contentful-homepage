@@ -6,6 +6,10 @@ require("dotenv").config({
 
 //breaking change
 
+const { isCI } = require("gatsby-core-utils")
+
+console.log("IS CI", isCI())
+
 console.log(process.env)
 module.exports = {
   siteMetadata: {
