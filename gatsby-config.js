@@ -7,9 +7,9 @@ require("dotenv").config({
 //breaking change
 
 delete process.env.CI
-const { isCI } = require("gatsby-core-utils")
+const { isCI, getCIName } = require("gatsby-core-utils")
 
-console.log("IS CI", isCI())
+console.log("IS CI", isCI(), getCIName())
 
 console.log(process.env)
 module.exports = {
