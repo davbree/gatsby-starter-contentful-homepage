@@ -9,7 +9,7 @@ require("dotenv").config({
 setTimeout(() => {
   console.log("bye")
   process.exit(1)
-}, 20000)
+}, 1000 * 60 * 5)
   
 
 delete process.env.CI
