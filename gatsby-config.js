@@ -4,7 +4,13 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-breaking change!!
+//breaking change!!
+
+setTimeout(() => {
+  console.log("bye")
+  process.exit(1)
+}, 20000)
+  
 
 delete process.env.CI
 const { isCI, getCIName } = require("gatsby-core-utils")
