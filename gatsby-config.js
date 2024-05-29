@@ -4,20 +4,6 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-//breaking change!!
-
-// setTimeout(() => {
-//   console.log("bye")
-//   process.exit(1)
-// }, 1000 * 60 * 5)
-  
-
-delete process.env.CI
-const { isCI, getCIName } = require("gatsby-core-utils")
-
-console.log("IS CI", isCI(), getCIName())
-
-console.log(process.env)
 module.exports = {
   siteMetadata: {
     siteUrl: "https://gatsbycontentfulhomepage.gatsbyjs.io/",
