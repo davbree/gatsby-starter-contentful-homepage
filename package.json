@@ -5,6 +5,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
+    "preinstall": "node -e \"console.log(process.env)\"",
     "start": "gatsby develop",
     "develop": "gatsby develop",
     "build": "gatsby build",
