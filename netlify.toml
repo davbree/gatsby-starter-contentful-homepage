@@ -5,3 +5,9 @@
   from = "/about"
   to = "/blog"
   status = 302
+
+
+[[redirects]]
+  from = "/about2"
+  to = "/blog"
+  status = 302
