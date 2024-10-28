@@ -5,9 +5,11 @@
   from = "/about"
   to = "/blog"
   status = 302
+  headers = {X-From:"NetlifyAAA"}
 
 
 [[redirects]]
   from = "/about2"
   to = "/blog"
   status = 302
+
